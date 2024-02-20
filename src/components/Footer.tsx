@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import { unstable_setRequestLocale } from "next-intl/server";
+import { LocaleProps } from "../types";
 
 export default function Footer({ params: { locale } }: LocaleProps) {
   unstable_setRequestLocale(locale);

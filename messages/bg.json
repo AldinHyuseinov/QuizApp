@@ -4,5 +4,9 @@
   },
   "Footer": {
     "copyright": "Всички права запазени"
+  },
+  "LocaleSwitcher": {
+    "label": "Смени език",
+    "locale": "{locale, select, bg {Bulgarian} en {English} other {Неоткрит}}"
   }
 }
