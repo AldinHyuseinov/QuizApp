@@ -6,6 +6,7 @@ import Footer from "@/src/components/Footer";
 import { locales } from "@/src/config";
 import { unstable_setRequestLocale } from "next-intl/server";
 import clsx from "clsx";
+import ThemeProvider from "../theme-provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,9 +31,11 @@ export default function RootLayout({
   return (
     <html lang={locale}>
       <body className={clsx(inter.className, "min-h-screen")}>
-        <Navigation />
-        {children}
-        <Footer params={{ locale }} />
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <Navigation />
+          {children}
+          <Footer params={{ locale }} />
+        </ThemeProvider>
       </body>
     </html>
   );

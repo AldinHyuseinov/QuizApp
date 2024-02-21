@@ -1,5 +1,6 @@
 import Link from "next/link";
 import LocaleSwitcher from "./LocaleSwitcher";
+import ThemeSwitcher from "./ThemeSwitcher";
 
 export default function Navigation() {
   return (
@@ -8,7 +9,10 @@ export default function Navigation() {
 
       <nav>
         <ul className="flex gap-4 items-center">
-          <li>Theme</li>
+          <li>
+            <p className="sr-only">Toggle theme</p>
+            <ThemeSwitcher />
+          </li>
           <li>
             <LocaleSwitcher />
           </li>
