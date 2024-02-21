@@ -8,5 +8,11 @@
   "LocaleSwitcher": {
     "label": "Change language",
     "locale": "{locale, select, bg {Bulgarian} en {English} other {Unknown}}"
+  },
+  "RootLayout": {
+    "title": "Brainy | For the big brains!"
+  },
+  "Navigation": {
+    "label": "Change theme"
   }
 }

@@ -1,16 +1,22 @@
-import Link from "next/link";
 import LocaleSwitcher from "./LocaleSwitcher";
 import ThemeSwitcher from "./ThemeSwitcher";
+import Logo from "./Logo";
+import { LocaleProps } from "../types";
+import { unstable_setRequestLocale } from "next-intl/server";
+import { useTranslations } from "next-intl";
 
-export default function Navigation() {
+export default function Navigation({ params: { locale } }: LocaleProps) {
+  unstable_setRequestLocale(locale);
+  const t = useTranslations("Navigation");
+
   return (
-    <header className="container mx-auto flex justify-between p-4">
-      <Link href="/">Trivia</Link>
+    <header className="container max-w-full flex justify-around items-center p-4 mb-4 shadow">
+      <Logo />
 
       <nav>
         <ul className="flex gap-4 items-center">
           <li>
-            <p className="sr-only">Toggle theme</p>
+            <p className="sr-only">{t("label")}</p>
             <ThemeSwitcher />
           </li>
           <li>

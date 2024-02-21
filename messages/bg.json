@@ -8,5 +8,11 @@
   "LocaleSwitcher": {
     "label": "Смени език",
     "locale": "{locale, select, bg {Bulgarian} en {English} other {Неоткрит}}"
+  },
+  "RootLayout": {
+    "title": "Brainy | За Умници!"
+  },
+  "Navigation": {
+    "label": "Смени темата"
   }
 }
