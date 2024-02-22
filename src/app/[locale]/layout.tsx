@@ -11,7 +11,7 @@ import { MetadataProps } from "@/src/types";
 const inter = Inter({ subsets: ["latin"] });
 
 export async function generateMetadata({ params: { locale } }: Omit<MetadataProps, "children">) {
-  const t = await getTranslations({ locale, namespace: "RootLayout" });
+  const t = await getTranslations({ locale, namespace: "AppLayout" });
 
   return {
     title: t("title"),
@@ -26,7 +26,7 @@ export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
 
-export default function RootLayout({
+export default function AppLayout({
   children,
   params: { locale },
 }: Readonly<{

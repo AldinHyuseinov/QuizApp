@@ -8,7 +8,7 @@ export default function IndexPage({ params: { locale } }: LocaleProps) {
 
   return (
     <main className="flex justify-center">
-      <h1 className="text-4xl">{t("title")}</h1>
+      <h1>{t("title")}</h1>
     </main>
   );
 }

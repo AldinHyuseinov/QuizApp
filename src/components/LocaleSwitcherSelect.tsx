@@ -1,8 +1,9 @@
 "use client";
 
-import { useRouter } from "next/navigation";
 import { ChangeEvent, useTransition } from "react";
+import { useParams } from "next/navigation";
 import { LocaleSwitcherSelectProps } from "../types";
+import { useRouter, usePathname } from "../navigation";
 
 export default function LocaleSwitcherSelect({
   children,
@@ -11,12 +12,18 @@ export default function LocaleSwitcherSelect({
 }: LocaleSwitcherSelectProps) {
   const router = useRouter();
   const [isPending, startTransition] = useTransition();
+  const pathname = usePathname();
+  const params = useParams();
 
   const onSelectChange = (event: ChangeEvent<HTMLSelectElement>) => {
     const nextLocale = event.target.value;
 
     startTransition(() => {
-      router.replace(nextLocale);
+      router.replace(
+        // @ts-expect-error
+        { pathname, params },
+        { locale: nextLocale }
+      );
     });
   };
 

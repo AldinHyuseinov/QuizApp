@@ -14,3 +14,12 @@ export type MetadataProps = {
   children: ReactNode;
   params: { locale: string };
 };
+
+export type RootLayoutProps = {
+  children: ReactNode;
+};
+
+export type ErrorProps = {
+  error: Error;
+  reset(): void;
+};

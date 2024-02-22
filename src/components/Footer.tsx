@@ -8,7 +8,7 @@ export default function Footer({ params: { locale } }: LocaleProps) {
 
   return (
     <footer className="flex justify-center">
-      <p>&copy; 2024 Trivia. {t("copyright")}.</p>
+      <p>&copy; 2024 Brainy. {t("copyright")}.</p>
     </footer>
   );
 }

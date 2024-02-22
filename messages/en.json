@@ -9,7 +9,7 @@
     "label": "Change language",
     "locale": "{locale, select, bg {Bulgarian} en {English} other {Unknown}}"
   },
-  "RootLayout": {
+  "AppLayout": {
     "title": "Brainy | For the big brains!"
   },
   "Navigation": {
