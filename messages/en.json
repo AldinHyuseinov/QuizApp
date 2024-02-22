@@ -14,5 +14,9 @@
   },
   "Navigation": {
     "label": "Change theme"
+  },
+  "NotFoundPage": {
+    "title": "Not Found!",
+    "paragraph": "The page you're looking for can't be found."
   }
 }
