@@ -7,8 +7,10 @@ export default function IndexPage({ params: { locale } }: LocaleProps) {
   const t = useTranslations("Index");
 
   return (
-    <main className="flex justify-center">
+    // Todo:
+    <main className="flex flex-col items-center">
       <h1>{t("title")}</h1>
+      <p>{t("paragraph")}</p>
     </main>
   );
 }
