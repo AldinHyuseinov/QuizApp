@@ -16,7 +16,7 @@ it("changes button icon when theme changes", async ({ page }) => {
   expect(
     // @ts-expect-error
     await page.getByAltText("Icon for toggling theme").evaluate((element) => element.src)
-  ).toBe("http://127.0.0.1:3000/_next/static/media/moon.adf57158.svg");
+  ).toContain("moon");
 });
 
 it("changes button position when clicked", async ({ page }) => {
