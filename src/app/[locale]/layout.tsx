@@ -38,7 +38,7 @@ export default function AppLayout({
   return (
     <html lang={locale}>
       <body className={clsx(inter.className, "min-h-screen")}>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
           <Navigation params={{ locale }} />
           {children}
           <Footer params={{ locale }} />
