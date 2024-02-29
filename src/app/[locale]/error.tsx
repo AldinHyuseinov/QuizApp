@@ -10,9 +10,10 @@ export default function Error({ error, reset }: ErrorProps) {
   }, [error]);
 
   return (
-    <div>
+    <div className="flex flex-col items-center">
       <h2>Something went wrong!</h2>
       <button
+        className="border-black rounded p-2 m-1 bg-red-500 hover:bg-red-600 hover:text-white hover:dark:text-black"
         onClick={
           // Attempt to recover by trying to re-render the segment
           () => reset()
