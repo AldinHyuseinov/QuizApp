@@ -1,7 +1,34 @@
 {
   "Index": {
     "title": "Welcome",
-    "paragraph": "Choose a category and test your knowledge!"
+    "paragraph": "Choose a category and test your knowledge!",
+
+    "categories": {
+      "Books": {
+        "translation": "Books",
+        "alt": "Image with books"
+      },
+      "Movies": {
+        "translation": "Movie",
+        "alt": "Image of a cinema"
+      },
+      "Music": {
+        "translation": "Music",
+        "alt": "Image of notes"
+      },
+      "Television": {
+        "translation": "Television",
+        "alt": "Image of a remote and tv"
+      },
+      "VideoGames": {
+        "translation": "Video Games",
+        "alt": "Image of a two people playing a game"
+      },
+      "BoardGames": {
+        "translation": "Board Games",
+        "alt": "Image of a board game"
+      }
+    }
   },
   "Footer": {
     "copyright": "All rights reserved"

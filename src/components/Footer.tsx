@@ -7,7 +7,7 @@ export default function Footer({ params: { locale } }: LocaleProps) {
   const t = useTranslations("Footer");
 
   return (
-    <footer className="flex justify-center">
+    <footer className="flex justify-center p-2">
       <p>&copy; 2024 Brainy. {t("copyright")}.</p>
     </footer>
   );

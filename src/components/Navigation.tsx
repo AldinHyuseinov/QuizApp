@@ -10,7 +10,7 @@ export default function Navigation({ params: { locale } }: LocaleProps) {
   const t = useTranslations("Navigation");
 
   return (
-    <header className="container max-w-full flex justify-around items-center p-4 mb-4 shadow">
+    <header className="container max-w-full flex justify-around items-center p-4 shadow-md dark:shadow-gray-700">
       <Logo />
 
       <nav>
