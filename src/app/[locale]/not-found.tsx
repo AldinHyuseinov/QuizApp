@@ -6,7 +6,7 @@ export default function NotFoundPage() {
   const t = useTranslations("NotFoundPage");
 
   return (
-    <main className="flex flex-col items-center">
+    <main className="flex flex-col items-center p-4">
       <h1 className="max-w-[460px]">{t("title")}</h1>
       <p className="text-2xl">{t("paragraph")}</p>
     </main>

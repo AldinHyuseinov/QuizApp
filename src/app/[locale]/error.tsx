@@ -10,7 +10,7 @@ export default function Error({ error, reset }: ErrorProps) {
   }, [error]);
 
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center p-4">
       <h2>Something went wrong!</h2>
       <button
         className="border-black rounded p-2 m-1 bg-red-500 hover:bg-red-600 hover:text-white hover:dark:text-black"
